@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Message board</title>
+    </head>
+
+
+    <body>
+		<h2>Message board</h1>
+		<br/>
+        Here is the message from {{ person }} :
+        <br/>
+        {% for message in messages %}
+                {{ message|safe }}
+			{% endfor %}        
+
+        <br/>
+        <a href="/">Home</a>
+    </body>
+
+</html>
